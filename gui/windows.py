@@ -62,7 +62,7 @@ class Window:
 
         arch = messagebox.askquestion(title="Please enter ARCH: (arm / aarch64 / x86 / x86_64)" , icon="info")
         diassemple(filepath , arch , self.window)
-    def create_menu_bar(self, names , items_number):
+    def create_menu_bar(self):
         menubar = tk.Menu(self.window)
         menu = tk.Menu(menubar , tearoff=0)
         menu.add_command(label="open" , command=self.open_file)
